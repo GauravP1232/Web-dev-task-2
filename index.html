@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDrive Electric Car Launch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home-section" onclick="scrollToSection('home-section')">Home</a></li>
+                <li><a href="#about-section" onclick="scrollToSection('about-section')">About</a></li>
+                <li><a href="#features-section" onclick="scrollToSection('features-section')">Services</a></li>
+                <li><a href="#contact-section" onclick="scrollToSection('contact-section')">Contact</a></li>
+                <li><a href="#search-section" onclick="scrollToSection('search-section')"><img src="search-icon.png" alt="Search Icon"></a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Introducing the Future of Driving: The EcoDrive Electric Car</h1>
+            <p>Experience innovation, sustainability, and performance in one sleek package.</p>
+            <button class="cta-button" onclick="scrollToSection('cta-section')">Pre-order Now</button>
+            <button class="cta-button secondary" onclick="scrollToSection('features-section')">Learn More</button>
+        </div>
+    </header>
+
+    <section id="home-section"></section>
+
+    <section id="about-section" class="about-section">
+        <h2>About EcoDrive</h2>
+        <p>EcoDrive is committed to creating innovative and sustainable electric vehicles that deliver outstanding performance and a superior driving experience. Our goal is to lead the way in the automotive industry with our cutting-edge technology and eco-friendly approach.</p>
+    </section>
+
+    <section class="features-section" id="features-section">
+        <h2>Unmatched Features for an Unmatched Experience</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="battery img.png" alt="Battery Icon">
+                <h3>Extended Battery Life</h3>
+                <p>Enjoy up to 500 miles on a single charge.</p>
+            </div>
+            <div class="feature">
+                <img src="speed icon.png" alt="Speed Icon">
+                <h3>Impressive Speed</h3>
+                <p>Accelerate from 0 to 60 mph in just 3.5 seconds.</p>
+            </div>
+            <div class="feature">
+                <img src="eco img.jpeg" alt="Eco Icon">
+                <h3>Eco-Friendly</h3>
+                <p>Zero emissions for a cleaner planet.</p>
+            </div>
+            <div class="feature">
+                <img src="connectivity icon.png" alt="Connectivity Icon">
+                <h3>Smart Connectivity</h3>
+                <p>Stay connected with advanced infotainment and mobile integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-section" class="cta-section">
+        <h2>Reserve Your EcoDrive Today</h2>
+        <p>Limited availability - don't miss out!</p>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <button class="cta-button">Reserve Now</button>
+        </form>
+    </section>
+
+    <section class="video-section">
+        <h2>See the EcoDrive in Action</h2>
+        <video controls>
+            <source src="Fiat 500 _ Ontdek EcoDrive.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="EcoDrive Car img1.jpeg" alt="EcoDrive Car Image 1">
+            <img src="EcoDrive Car img 2.jpeg" alt="EcoDrive Car Image 2">
+            <img src="EcoDrive Car img3.jpeg" alt="EcoDrive Car Image 3">
+            <img src="EcoDrive Car img 4.jpeg" alt="EcoDrive Car Image 4">
+        </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please email us at info@ecodrive.com or call 1-800-123-4567.</p>
+    </section>
+
+    <section id="search-section" class="search-section">
+        <h2>Search</h2>
+        <input type="text" placeholder="Search...">
+    </section>
+
+    <footer>
+        <p>Contact us at info@ecodrive.com or call 1-800-123-4567</p>
+        <h2 style="color: orange;">Devloped By👉 Gaurav Pawar</h2>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="additional-resources">
+            <a href="#">FAQ</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
